@@ -116,3 +116,9 @@
 
 })(jQuery);
 
+function sendMessage() {
+	let message = $('#message').val();
+	let subject = $('#name').val();
+	let href = "mailto:ih_beldjoudi@esi.dz?subject=" + subject + "&body=" + message;
+	window.open(href, "_self");
+}
